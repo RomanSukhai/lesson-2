@@ -1,0 +1,239 @@
+.img-overflay{
+    background-image: url(images/bg4.png);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+    
+}
+header{
+    width: 100%;
+    height: 768px;
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.front-end1{
+    @extend header;
+    background-image: url(images/Background2.png);
+    height: 554px;
+}
+.front-end2{
+    @extend header;
+    background-image: url(images/bg3.png);
+    height: 693px;
+}
+.front-end3{
+    @extend .front-end1;
+    height: 822px;
+}
+.front-end4{
+    @extend .front-end2;
+    height: 422px;
+}
+
+@media screen and (max-width:375px) {
+    .blocknew{
+        height: 199px!important;
+        margin-right: 20px;
+    }
+    header{
+        height: 275px;
+    }
+    .front-end1{
+        height:335px ;
+    }
+    .front-end2{
+        height:673px ;
+    }
+    .front-end3{
+        height: 693px;
+    }
+    .front-end4{
+        height: 444px!important;
+    }
+    .text{
+        font-size: 20px!important;
+        text-align: center;
+        margin-top: 20px!important;
+    }
+    .text2{
+        font-size: 11px!important;
+        text-align: center;
+        margin-top: 0px!important;
+    }
+    .text3{
+        font-size: 9px!important;
+        text-align: center;
+        margin-top: 0px!important;
+    }
+    .text4{
+        text-align: center;
+    }
+    .text5{
+        font-size: 12px!important;
+    }
+    .text6{
+        font-size: 12px!important;
+    }
+    .row1 {
+        --bs-gutter-x: 11.5rem!important;
+    }
+    .mt-my2{
+        margin-top: 0!important;
+        }
+    
+
+    
+}
+@media (max-width: 570px) and (min-width:375px){
+    .mt-my2{
+        margin-top: 0!important;
+        }
+}
+@media (min-width: 576px){
+    .mt-sm-6{
+    margin-top: 3.5rem!important;
+    }
+    .mt-sm-7{
+    margin-top: 4.5rem!important;
+    margin-left: 70px;
+    }
+}
+@media (max-width: 975px){
+    .skill{
+        text-align: center;
+    }
+    .front-end2{
+        height: 1000px;
+    }
+    .profile{
+        width: 340px!important;
+    }
+}
+.mt-my{
+    margin-top: 1.5rem!important;
+    }
+.mt-my2{
+    margin-top: 8rem;
+    }
+.arrow{
+    width: 62px;
+    height: 24px;
+}
+.navbar-toggler{
+    border: 3px solid rgb(255, 255, 255);
+}
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 3rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.text{
+    font-size: 50px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.text2{
+    font-style: 10px;
+    color: white;
+    margin-left: 20px;
+}
+
+.text3{
+    color: white;
+    font-size: 18px;
+    margin: 100px 0 0 20px;
+}
+.profile{
+    height: 350px;
+    width: 340px;
+}
+.text7{
+    font-size: 18px;
+    color: gray;
+}
+.row1 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.row2 {
+    --bs-gutter-x: 0.4rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.row {
+    --bs-gutter-x: 0.5rem;
+    
+}
+
+.blocknew{
+    width: 100%;
+    height: 403px;
+    display: grid;
+    grid-template-columns:60% 40% ;
+    grid-template-rows: 40% 10% 10% 25% ;
+    grid-column-gap: 15px!important;
+    grid-row-gap: 15px!important;
+}
+.topleft{
+    height: 100%;
+    width: 100%;
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.topright{
+    height: 100%;
+    width: 100%;
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.bottomright{
+    height: 100%;
+    width: 100%;
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.bottomleft{
+    height: 100%;
+    width: 100%;
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.arrow2{
+    width: 24px;
+    height: 24px;
+    float: right;
+    align-self: flex-end;
+}
+.textbutton{
+    font-size: 14px;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    height: 20px;
+    align-items: center;
+}
